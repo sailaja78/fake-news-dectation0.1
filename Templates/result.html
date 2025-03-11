@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Detection Result</title>
+</head>
+<body>
+    <h1>Fake News Detection Result</h1>
+    <p><strong>News Text:</strong> {{ news_text }}</p>
+    <p><strong>Prediction:</strong> {{ prediction }}</p>
+    {% if prediction == 'REAL' %}
+        <p style="color: green;">This news is likely REAL.</p>
+    {% else %}
+        <p style="color: red;">This news is likely FAKE.</p>
+    {% endif %}
+    <a href="/">Back to Input</a>
+</body>
+</html>
